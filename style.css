@@ -32,23 +32,25 @@ body {
 }
 
 .mole {
-    
     opacity: 0;
     visibility: hidden;
     z-index: -100;
-    transform: translateY(-50px);
-    transition: transform 3s ease-in-out;
+    margin-top: -45px;
+    /* transform: translateY(-50px);
+    transition: transform 3s ease-in-out; */
 }
 .mole.open {
-    opacity: 1;
+    /* opacity: 1;
     visibility: visible;
     z-index: 100;
-    transform: translateY(-50px);
+     */
 }
 
 .holes-moles {
     display: flex;
     flex-direction: column;
+    justify-content: space-between;
+    height: 300px;
 }
 a {
     text-decoration: none;
@@ -83,3 +85,55 @@ h1 {
     
 }
 
+span {
+    font-size: 4rem;
+    color: #eeee;
+}
+
+@keyframes fade-in {
+    from {
+        visibility: hidden;
+        opacity: 0;
+        z-index: 0;
+        transform: translateY(10px);
+    }
+    50% {
+        visibility: visible;
+        opacity: 0;
+        z-index: 0;
+        transform: translateY(0px);
+    }
+    to {
+        visibility: visible;
+        opacity: 1;
+        z-index: 100;
+        transform: translateY(-4px);
+    }
+}
+.fade-in{
+    animation: fade-in 500ms ease-in-out forwards;
+}
+
+@keyframes fade-out {
+    from {
+        visibility: visible;
+        opacity: 1;
+        z-index: 100;
+        transform: translateY(0px);
+    }
+    50% {
+        visibility: visible;
+        opacity: 0;
+        z-index: 0;
+        transform: translateY(0px);
+    }
+    to {
+        visibility: hidden;
+        opacity: 0;
+        z-index: 0;
+        transform: translateY(10px);
+    }
+}
+.fade-out{
+    animation: fade-out 500ms ease-in-out forwards;
+}

@@ -13,11 +13,11 @@
             <div class="data_tab">
                 <div class="timer">
                     <h1>Timer</h1>
-                    <span>`${time}`</span>
+                    <span id = 'timeleft'>0</span>
                 </div>
                 <div class="score">
                     <h1>Score</h1>
-                    <span>`${score}`</span>
+                    <span id = 'score'>`${score}`</span>
                 </div>
             </div>
             <div class="holes-moles">
@@ -71,7 +71,7 @@
                 </div>
             </div>
             <div class="reset_button">
-                <a href="">Reset Game</a>
+                <a href="#" onclick="return false;" id='reset'>Reset Game</a>
             </div>
         </div>
     </div>
