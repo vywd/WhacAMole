@@ -1,0 +1,85 @@
+body {
+    background: rgba(1,137,63,.8);
+    font-family: Arial, Helvetica, sans-serif;
+    max-height: 100vh;
+    max-width: 100%;
+    top: 0px;
+    bottom: 0px;
+}
+.game_feald {
+    max-width: 600px;
+    margin: 0px auto;
+}
+.data_tab {
+    display: flex;
+    justify-content: space-between;
+    margin: 50px 0;
+}
+.whole img {
+    width: 50px;
+}
+.mole img {
+    width: 50px;
+}
+.feald_raws {
+    display: flex;
+    justify-content: space-around;
+
+    
+}
+.whole {
+    
+}
+
+.mole {
+    
+    opacity: 0;
+    visibility: hidden;
+    z-index: -100;
+    transform: translateY(-50px);
+    transition: transform 3s ease-in-out;
+}
+.mole.open {
+    opacity: 1;
+    visibility: visible;
+    z-index: 100;
+    transform: translateY(-50px);
+}
+
+.holes-moles {
+    display: flex;
+    flex-direction: column;
+}
+a {
+    text-decoration: none;
+}
+.reset_button{
+    display: flex;
+    justify-content: center;
+    
+}
+.reset_button a {
+    color: rgb(179, 235, 66);
+    padding: 15px 45px;
+    border: 1px solid rgb(179, 235, 66);
+    border-radius: 5px;
+    margin: 50px;
+}
+.timer {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.score {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+h1 {
+    color: rgb(179, 235, 66);
+}
+
+.holes {
+    
+}
+
