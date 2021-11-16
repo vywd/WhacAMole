@@ -39,11 +39,11 @@ body {
     /* transform: translateY(-50px);
     transition: transform 3s ease-in-out; */
 }
-.mole.open {
-    /* opacity: 1;
+.open {
+    opacity: 1;
     visibility: visible;
     z-index: 100;
-     */
+    
 }
 
 .holes-moles {
@@ -111,7 +111,7 @@ span {
     }
 }
 .fade-in{
-    animation: fade-in 500ms ease-in-out forwards;
+    animation: fade-in 200ms ease-in-out forwards;
 }
 
 @keyframes fade-out {
@@ -135,5 +135,24 @@ span {
     }
 }
 .fade-out{
-    animation: fade-out 500ms ease-in-out forwards;
+    animation: fade-out 200ms ease-in-out forwards;
+}
+
+.game_ended_overlay {
+    position: fixed;
+    top: 0px;
+    right: 0px;
+    bottom: 0px;
+    left: 0px;
+    color: rgba(110, 224, 133, .5);
+    visibility: hidden;
+    opacity: 0;
+    z-index: 0;
+}
+h2 {
+    color: rgba(227, 255, 233, 0.802);
+    text-align: center;
+    justify-content: center;
+    vertical-align: middle;
+    font-size: 10rem;;
 }
